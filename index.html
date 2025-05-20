@@ -3,26 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Генератор Математических Примеров</title>
+    <title>Задания ЕГЭ по математике (Профиль)</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Подключаем Telegram WebApp API -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Математический Генератор</h1>
+        <h1>Задания ЕГЭ по математике (Профиль)</h1>
 
-        <div class="difficulty-selection">
-            <button id="easy-btn">Легкий</button>
-            <button id="medium-btn">Средний</button>
-            <button id="hard-btn">Сложный</button>
+        <p>Выберите номер задания:</p>
+        <div class="problem-selection">
+            <!-- Кнопки для номеров заданий 1-12 -->
+            <button class="problem-btn" data-problem-number="1">№1</button>
+            <button class="problem-btn" data-problem-number="2">№2</button>
+            <button class="problem-btn" data-problem-number="3">№3</button>
+            <button class="problem-btn" data-problem-number="4">№4</button>
+            <button class="problem-btn" data-problem-number="5">№5</button>
+            <button class="problem-btn" data-problem-number="6">№6</button>
+            <button class="problem-btn" data-problem-number="7">№7</button>
+            <button class="problem-btn" data-problem-number="8">№8</button>
+            <button class="problem-btn" data-problem-number="9">№9</button>
+            <button class="problem-btn" data-problem-number="10">№10</button>
+            <button class="problem-btn" data-problem-number="11">№11</button>
+            <button class="problem-btn" data-problem-number="12">№12</button>
         </div>
 
         <div id="math-problem" class="math-problem">
-            Нажмите кнопку сложности, чтобы начать.
+            Выберите номер задания выше, чтобы получить пример.
         </div>
 
         <div class="answer-input">
-            <input type="number" id="user-answer" placeholder="Введите ваш ответ">
-            <button id="submit-answer">Ответить</button>
+            <input type="text" id="user-answer" placeholder="Введите ваш ответ">
+            <button id="submit-answer" disabled>Ответить</button>
         </div>
 
         <div id="result" class="result"></div>
