@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.difficulty-selection button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#easy-btn { background-color: #4CAF50; color: white; }
+#medium-btn { background-color: #FFC107; color: #333; }
+#hard-btn { background-color: #F44336; color: white; }
+
+#easy-btn:hover { background-color: #45a049; }
+#medium-btn:hover { background-color: #FFB300; }
+#hard-btn:hover { background-color: #d32f2f; }
+
+
+.math-problem {
+    margin: 25px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    min-height: 1.5em; /* Для предотвращения "прыжков" при загрузке текста */
+}
+
+.answer-input input[type="number"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 150px;
+    text-align: center;
+}
+
+.answer-input button {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.answer-input button:hover {
+    background-color: #007b9e;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    min-height: 1.2em; /* Для предотвращения "прыжков" */
+}
+
+.result.correct {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.result.incorrect {
+    color: #F44336;
+    font-weight: bold;
+}
