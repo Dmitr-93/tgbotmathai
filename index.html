@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор Математических Примеров</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Математический Генератор</h1>
+
+        <div class="difficulty-selection">
+            <button id="easy-btn">Легкий</button>
+            <button id="medium-btn">Средний</button>
+            <button id="hard-btn">Сложный</button>
+        </div>
+
+        <div id="math-problem" class="math-problem">
+            Нажмите кнопку сложности, чтобы начать.
+        </div>
+
+        <div class="answer-input">
+            <input type="number" id="user-answer" placeholder="Введите ваш ответ">
+            <button id="submit-answer">Ответить</button>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
